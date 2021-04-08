@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 /**
- * @author Johan Sebastian
+ * @author Johan Sebastian Palma Burgos
  *
  */
 public class Main 
@@ -12,6 +12,8 @@ public class Main
 	// -------------------
 	// MÉTODOS
 	// -------------------
+	
+	//Creo el método para ejecutar el algoritmo
 	public static void main(String[] args)
 	{
 
