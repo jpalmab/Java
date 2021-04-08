@@ -14,14 +14,17 @@ public class CrudCliente
 	// ATRIBUTOS
 	// -------------------
 	
+	// Relación con la Clase ConexionMySQL
 	ConexionMySQL bd = new ConexionMySQL();
 
+	// Creo el objeto de tipo Cliente
 	Cliente c = new Cliente();
 	
 	// -------------------
 	// MÉTODOS
 	// -------------------
 	
+	// Consulto los clientes de la base de datos
 	public void consultarCliente()
 	{
 		try
@@ -49,7 +52,7 @@ public class CrudCliente
 		}
 	}
 
-
+	//Método que permite agregar un cliente de la base de datos
 	public void agregarCliente(int pCodigo, String pNombre, String pApellido,int pCelular, int pCedula)
 	{
 		try 
@@ -86,6 +89,7 @@ public class CrudCliente
 		}
 	}
 
+	//Método que permite modificar un cliente de la base de datos
 	public void modificarCliente(int pCodigo, String pNombre, String pApellido, String pCelular, int pCedula)
 	{	
 		try
@@ -122,6 +126,7 @@ public class CrudCliente
 		}
 	}
 
+	//Método que permite eliminar un cliente de la base de datos, dato el código del cliente
 	public void eliminarCliente(int pCodigo)
 	{
 		try
@@ -151,6 +156,7 @@ public class CrudCliente
 		} 
 	}
 
+	//Método que permite buscar un cliente de la base de datos por su cédula
 	public String buscarCliente(int pCedula)
 	{
 		String s = "";
