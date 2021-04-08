@@ -12,7 +12,7 @@ public class ConexionMySQL
 	// ATRIBUTOS
 	// -------------------
 	
-    // Librería de MySQL
+    // LibrerÃ­a de MySQL
     public String driver = "com.mysql.jdbc.Driver";
 
     // Nombre de la base de datos
@@ -34,9 +34,10 @@ public class ConexionMySQL
     public String password = "";
     
 	// -------------------
-	// MÉTODOS
+	// MÃ‰TODOS
 	// -------------------
 
+    //MÃ©todo para conectarse a la base de datos MySQL
     public Connection conectarMySQL() 
     {
         Connection conn = null;
@@ -49,7 +50,7 @@ public class ConexionMySQL
         catch (ClassNotFoundException | SQLException e) 
         {
             e.printStackTrace();
-            JOptionPane.showMessageDialog(null, "Conexión fallida con la base de datos");
+            JOptionPane.showMessageDialog(null, "ConexiÃ³n fallida con la base de datos");
         }
         return conn;
     }
